@@ -17,7 +17,7 @@ const Surface = ({ data, name }) => {
     <div>
       <StyledOverview>
         <StyledImageContainer>
-          <img src={`.${planetPage.images.geology}`} alt="Oops ..planet" />
+          <img src={`${planetPage.images.geology}`} alt="Oops ..planet" />
         </StyledImageContainer>
         <StyledWrapper>
           <StyledInfo>
@@ -27,7 +27,7 @@ const Surface = ({ data, name }) => {
               <span>
                 Source : <a href={`${planetPage.geology.source}`}>Wikipedia</a>
               </span>
-              <img src="../assets/icon-source.svg" />
+              <img src="/planet-facts/assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>

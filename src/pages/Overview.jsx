@@ -10,7 +10,7 @@ const Overview = ({ data, name }) => {
     <div>
       <StyledOverview>
         <StyledImageContainer>
-          <img src={`../.${planetPage.images.planet}`} alt="Oops ..planet" />
+          <img src={`${planetPage.images.planet}`} alt="Oops ..planet" />
         </StyledImageContainer>
         <StyledWrapper>
           <StyledInfo>
@@ -20,7 +20,7 @@ const Overview = ({ data, name }) => {
               <span>
                 Source : <a href={`${planetPage.overview.source}`}>Wikipedia</a>
               </span>
-              <img src="../assets/icon-source.svg" />
+              <img src="/planet-facts/assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>

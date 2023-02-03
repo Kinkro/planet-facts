@@ -18,7 +18,7 @@ const Structure = ({ data, name }) => {
     <div>
       <StyledOverview>
         <StyledImageContainer>
-          <img src={`.${planetPage.images.internal}`} alt="Oops ..planet" />
+          <img src={`${planetPage.images.internal}`} alt="Oops ..planet" />
         </StyledImageContainer>
         <StyledWrapper>
           <StyledInfo>
@@ -29,7 +29,7 @@ const Structure = ({ data, name }) => {
                 Source :{" "}
                 <a href={`${planetPage.structure.source}`}>Wikipedia</a>
               </span>
-              <img src="../assets/icon-source.svg" />
+              <img src="/planet-facts/assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>
