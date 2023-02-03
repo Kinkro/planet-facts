@@ -19,7 +19,7 @@ const Overview = ({ data, name }) => {
               <span>
                 Source : <a href={`${planetPage.overview.source}`}>Wikipedia</a>
               </span>
-              <img src="../../public/assets/icon-source.svg" />
+              <img src="../../assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>

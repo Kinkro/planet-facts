@@ -8,9 +8,11 @@ import {
   StyledWrapper,
   StyledImageContainer,
 } from "./Overview";
-
+import { useLocation } from "react-router-dom";
 const Surface = ({ data, name }) => {
   const planetPage = data.filter((planet) => planet.name === name)[0];
+  const location = useLocation();
+
   return (
     <div>
       <StyledOverview>
@@ -25,7 +27,7 @@ const Surface = ({ data, name }) => {
               <span>
                 Source : <a href={`${planetPage.geology.source}`}>Wikipedia</a>
               </span>
-              <img src="../../public/assets/icon-source.svg" />
+              <img src="../../assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>
