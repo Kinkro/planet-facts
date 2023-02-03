@@ -10,7 +10,7 @@ const Overview = ({ data, name }) => {
     <div>
       <StyledOverview>
         <StyledImageContainer>
-          <img src={`.${planetPage.images.planet}`} alt="Oops ..planet" />
+          <img src={`../.${planetPage.images.planet}`} alt="Oops ..planet" />
         </StyledImageContainer>
         <StyledWrapper>
           <StyledInfo>
