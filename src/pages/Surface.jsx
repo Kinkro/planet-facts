@@ -27,7 +27,7 @@ const Surface = ({ data, name }) => {
               <span>
                 Source : <a href={`${planetPage.geology.source}`}>Wikipedia</a>
               </span>
-              <img src="../../assets/icon-source.svg" />
+              <img src="../assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>

@@ -29,7 +29,7 @@ const Structure = ({ data, name }) => {
                 Source :{" "}
                 <a href={`${planetPage.structure.source}`}>Wikipedia</a>
               </span>
-              <img src="../../assets/icon-source.svg" />
+              <img src="../assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>

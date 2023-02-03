@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 const Overview = ({ data, name }) => {
   const planetPage = data.filter((planet) => planet.name === name)[0];
   const location = useLocation();
+  console.log(planetPage);
   return (
     <div>
       <StyledOverview>
@@ -19,7 +20,7 @@ const Overview = ({ data, name }) => {
               <span>
                 Source : <a href={`${planetPage.overview.source}`}>Wikipedia</a>
               </span>
-              <img src="../../assets/icon-source.svg" />
+              <img src="../assets/icon-source.svg" />
             </StyledSourceLink>
           </StyledInfo>
           <StyledLinkButtons>

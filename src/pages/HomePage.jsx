@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import hamburger from "../../public/assets/icon-hamburger.svg";
 import styled from "styled-components";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import { Link, Outlet, useLocation } from "react-router-dom";
@@ -39,7 +38,7 @@ const HomePage = () => {
         <Link to="/">
           <img
             onClick={() => !showMenu && setShowMenu((prevMenu) => !prevMenu)}
-            src={hamburger}
+            src="../assets/icon-hamburger.svg"
             alt="menu"
           />
         </Link>
