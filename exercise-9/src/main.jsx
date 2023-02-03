@@ -10,11 +10,11 @@ import {
   Route,
   createRoutesFromElements,
   RouterProvider,
-  createBrowserRouter,
+  createHashRouter,
 } from "react-router-dom";
 import Surface from "./pages/Surface";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<HomePage />}>
       {data.map((planet) => (
