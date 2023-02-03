@@ -38,7 +38,7 @@ const HomePage = () => {
         <Link to="/">
           <img
             onClick={() => !showMenu && setShowMenu((prevMenu) => !prevMenu)}
-            src="../assets/icon-hamburger.svg"
+            src="/planet-facts/assets/icon-hamburger.svg"
             alt="menu"
           />
         </Link>
