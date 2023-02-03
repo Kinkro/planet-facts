@@ -8,7 +8,7 @@ import NavigationPlus from "../components/NavigationPlus";
 import Overview from "./Overview";
 
 const HomePage = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const location = useLocation();
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
