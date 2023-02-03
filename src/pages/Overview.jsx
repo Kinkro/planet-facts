@@ -172,5 +172,8 @@ export const StyledImageContainer = styled.div`
   @media (min-width: 1050px) {
     width: 60%;
     height: 650px;
+    img {
+      width: initial;
+    }
   }
 `;

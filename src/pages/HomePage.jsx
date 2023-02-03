@@ -8,7 +8,7 @@ import NavigationPlus from "../components/NavigationPlus";
 import Overview from "./Overview";
 
 const HomePage = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const location = useLocation();
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
@@ -45,7 +45,7 @@ const HomePage = () => {
       </StyledHomePage>
       {showMenu ? <Navigation setShowMenu={setShowMenu} data={data} /> : null}
       <NavigationPlus data={data} />
-      {location.pathname === "/" && innerWidth > 768 ? (
+      {location.pathname === "/" && showMenu && innerWidth > 768 ? (
         <Overview data={data} name="Mercury" />
       ) : (
         <Outlet />
