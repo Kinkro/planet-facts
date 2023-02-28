@@ -17,7 +17,7 @@ const Navigation = ({ data, setShowMenu }) => {
         </StyledContainer>
         <img src={chevron} alt="" />
       </StyledWrapper>
-    </Link>
+    </StyledLink>
   ));
   return <StyledNavigationMedia>{navNames}</StyledNavigationMedia>;
 };
