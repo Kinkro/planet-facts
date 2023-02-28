@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = ({ data, setShowMenu }) => {
   const navNames = data.map((planet) => (
-    <Link
+    <StyledLink
       to={`${planet.path}`}
       key={planet.radius}
       onClick={() => setShowMenu((prev) => !prev)}
@@ -23,6 +23,10 @@ const Navigation = ({ data, setShowMenu }) => {
 };
 
 export default Navigation;
+
+export const StyledLink = styled(Link)`
+  text-decoration:none;                            
+`;
 
 export const StyledContainer = styled.div`
   display: flex;
